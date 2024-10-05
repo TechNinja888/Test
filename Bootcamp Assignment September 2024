@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double current, resistance, time;
+    
+    cout << "Enter the current in amperes (A): ";
+    cin >> current;
+
+    cout << "Enter the resistance in ohms (Ω): ";
+    cin >> resistance;
+
+    cout << "Enter the time in seconds (s): ";
+    cin >> time;
+
+    double voltage = current * resistance;
+
+    double power = voltage * current;
+
+    double work = power * time;
+
+    cout << "\nVoltage (V) = " << voltage << " volts" << endl;
+    cout << "Power (P) = " << power << " watts" << endl;
+    cout << "Work (W) = " << work << " joules" << endl;
+
+    return 0;
+}
+ 
